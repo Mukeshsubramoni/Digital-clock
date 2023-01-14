@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+
+@font-face{
+    font-family:digital-7 ;
+    src: url("digital-7.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    gap: 50px; 
+    color: #6CC418;   
+
+}
+
+:root{
+    --light-color: #6CC417
+}
+
+h2{
+    color:#12ee3a;
+    font-size: 50px;
+}
+
+.frame{
+    width: 600px;
+    height: 300;
+    background-color: #333;
+    border: 30px solid rgb(172, 220, 15);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    font-size: 60px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.clock{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    font-family:digital-7;
+    align-items: center;
+    padding-left: 100px;
+    gap: 45px;
+    min-width: 10px;
+}
+
+.clock div{
+    text-align: center;
+    font-family:digital-7;
+    width: 20px;
+    font-size: 90px;
+    text-shadow:0 0 50px var(--light-color);
+    min-width: 10px;
+    position: relative;
+    
+}
+
+ .clock::before{
+    content: '';
+    position: absolute;
+    font-family:digital-7;
+    background-color: var(--light-color);
+    width: 100%;
+    height: 100%;
+    font-size: 90px;
+    filter: blur(50px);
+    opacity: 0.1;
+    left: 0;
+    top: 0;
+}
+.txt{
+    margin-left: 20px;
+}
